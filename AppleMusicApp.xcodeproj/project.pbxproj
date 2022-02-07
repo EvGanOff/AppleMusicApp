@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E7EA56F27B1BB070021302B /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EA56E27B1BB070021302B /* PlayerView.swift */; };
+		5E7EA57127B1BC770021302B /* MediaLibraryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EA57027B1BC770021302B /* MediaLibraryInfo.swift */; };
+		5E7EA57327B1BCF30021302B /* MediaLibraryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EA57227B1BCF30021302B /* MediaLibraryList.swift */; };
+		5E7EA57527B1BD580021302B /* MediaLibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EA57427B1BD580021302B /* MediaLibraryModel.swift */; };
 		5ECBC58427AC6BB60054C245 /* AppleMusicAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC58327AC6BB60054C245 /* AppleMusicAppApp.swift */; };
-		5ECBC58627AC6BB60054C245 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC58527AC6BB60054C245 /* ContentView.swift */; };
+		5ECBC58627AC6BB60054C245 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC58527AC6BB60054C245 /* TabBar.swift */; };
 		5ECBC58827AC6BB80054C245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECBC58727AC6BB80054C245 /* Assets.xcassets */; };
 		5ECBC58B27AC6BB80054C245 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECBC58A27AC6BB80054C245 /* Preview Assets.xcassets */; };
 		5ECBC59527AC6BB80054C245 /* AppleMusicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC59427AC6BB80054C245 /* AppleMusicAppTests.swift */; };
 		5ECBC59F27AC6BB80054C245 /* AppleMusicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC59E27AC6BB80054C245 /* AppleMusicAppUITests.swift */; };
 		5ECBC5A127AC6BB80054C245 /* AppleMusicAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC5A027AC6BB80054C245 /* AppleMusicAppUITestsLaunchTests.swift */; };
+		5ECBC5B027AC6ED20054C245 /* MediaLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC5AF27AC6ED20054C245 /* MediaLibraryView.swift */; };
+		5ECBC5B327AC6FCB0054C245 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC5B227AC6FCB0054C245 /* SearchView.swift */; };
+		5ECBC5B627AC6FFA0054C245 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC5B527AC6FF90054C245 /* RadioView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E7EA56E27B1BB070021302B /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		5E7EA57027B1BC770021302B /* MediaLibraryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryInfo.swift; sourceTree = "<group>"; };
+		5E7EA57227B1BCF30021302B /* MediaLibraryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryList.swift; sourceTree = "<group>"; };
+		5E7EA57427B1BD580021302B /* MediaLibraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryModel.swift; sourceTree = "<group>"; };
 		5ECBC58027AC6BB60054C245 /* AppleMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECBC58327AC6BB60054C245 /* AppleMusicAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicAppApp.swift; sourceTree = "<group>"; };
-		5ECBC58527AC6BB60054C245 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5ECBC58527AC6BB60054C245 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		5ECBC58727AC6BB80054C245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5ECBC58A27AC6BB80054C245 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5ECBC59027AC6BB80054C245 /* AppleMusicAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleMusicAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +55,9 @@
 		5ECBC59A27AC6BB80054C245 /* AppleMusicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleMusicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECBC59E27AC6BB80054C245 /* AppleMusicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicAppUITests.swift; sourceTree = "<group>"; };
 		5ECBC5A027AC6BB80054C245 /* AppleMusicAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5ECBC5AF27AC6ED20054C245 /* MediaLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryView.swift; sourceTree = "<group>"; };
+		5ECBC5B227AC6FCB0054C245 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		5ECBC5B527AC6FF90054C245 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +109,12 @@
 			isa = PBXGroup;
 			children = (
 				5ECBC58327AC6BB60054C245 /* AppleMusicAppApp.swift */,
-				5ECBC58527AC6BB60054C245 /* ContentView.swift */,
+				5E7EA56E27B1BB070021302B /* PlayerView.swift */,
 				5ECBC58727AC6BB80054C245 /* Assets.xcassets */,
+				5ECBC5AE27AC6E5E0054C245 /* TabBar */,
+				5ECBC5AD27AC6E570054C245 /* MediaLibrary */,
+				5ECBC5B427AC6FDE0054C245 /* RadioView */,
+				5ECBC5B127AC6FA80054C245 /* SearchView */,
 				5ECBC58927AC6BB80054C245 /* Preview Content */,
 			);
 			path = AppleMusicApp;
@@ -125,6 +143,41 @@
 				5ECBC5A027AC6BB80054C245 /* AppleMusicAppUITestsLaunchTests.swift */,
 			);
 			path = AppleMusicAppUITests;
+			sourceTree = "<group>";
+		};
+		5ECBC5AD27AC6E570054C245 /* MediaLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				5ECBC5AF27AC6ED20054C245 /* MediaLibraryView.swift */,
+				5E7EA57027B1BC770021302B /* MediaLibraryInfo.swift */,
+				5E7EA57227B1BCF30021302B /* MediaLibraryList.swift */,
+				5E7EA57427B1BD580021302B /* MediaLibraryModel.swift */,
+			);
+			path = MediaLibrary;
+			sourceTree = "<group>";
+		};
+		5ECBC5AE27AC6E5E0054C245 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5ECBC58527AC6BB60054C245 /* TabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		5ECBC5B127AC6FA80054C245 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				5ECBC5B227AC6FCB0054C245 /* SearchView.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		5ECBC5B427AC6FDE0054C245 /* RadioView */ = {
+			isa = PBXGroup;
+			children = (
+				5ECBC5B527AC6FF90054C245 /* RadioView.swift */,
+			);
+			path = RadioView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ECBC58627AC6BB60054C245 /* ContentView.swift in Sources */,
+				5E7EA57527B1BD580021302B /* MediaLibraryModel.swift in Sources */,
+				5ECBC5B327AC6FCB0054C245 /* SearchView.swift in Sources */,
+				5ECBC58627AC6BB60054C245 /* TabBar.swift in Sources */,
+				5E7EA57327B1BCF30021302B /* MediaLibraryList.swift in Sources */,
 				5ECBC58427AC6BB60054C245 /* AppleMusicAppApp.swift in Sources */,
+				5E7EA57127B1BC770021302B /* MediaLibraryInfo.swift in Sources */,
+				5E7EA56F27B1BB070021302B /* PlayerView.swift in Sources */,
+				5ECBC5B027AC6ED20054C245 /* MediaLibraryView.swift in Sources */,
+				5ECBC5B627AC6FFA0054C245 /* RadioView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
