@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TabBar: View {
     var body: some View {
-        ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
+        ZStack(alignment: .bottom) {
             TabView {
                 MediaLibraryView()
                     .tabItem {
@@ -25,10 +25,10 @@ struct TabBar: View {
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")
-                }
+                    }
             }
             .accentColor(Color.red)
-
+            
             PlayerView()
                 .padding(.bottom, Metric.playerViewPaddingBottom)
         }
