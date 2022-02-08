@@ -7,42 +7,54 @@
 
 import SwiftUI
 
+
 struct PlayerView: View {
-
-    @State private var button = true
-
     var body: some View {
-        VStack{
-            Divider()
-            HStack(alignment: .center) {
-                Image("iconForPlayer")
-                    .padding(.horizontal, 20)
-                    .frame(width: 70.0, height: 70.0)
-                    .scaledToFill()
-                    .clipped()
-                    .padding([.leading, .trailing, .top, .bottom], 6)
-                    .cornerRadius(25)
-                Text("SlipKnot - Dead Memories")
-                    .font(Font(.init(.application, size: 20)))
-                Spacer()
-                Button(action: {
-                    print("button pressed")
-                }) {
-                    Image(systemName: "play.fill")
-                }
-                .foregroundColor(.black)
-                .padding(.horizontal, 15)
+        ZStack {
+            VStack{
+                Divider()
 
-                Button(action: {
-                    print("button pressed")
-                }) {
-                    Image(systemName: "forward.fill")
+                HStack(alignment: .center) {
+                    Image("iconForPlayer")
+                        .resizable()
+                        .cornerRadius(Metric.cornerRadius)
+                        .shadow(radius: Metric.imageShadowRadius)
+                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                        .frame(width: Metric.imageWidth, height: Metric.imageHeight)
+                    Text("SlipKnot - Dead Memories")
+                        .font(Font(.init(.application, size: Metric.iconForPlayerFontSize)))
+                    Spacer()
+
+                    Button(action: {
+                        print("button pressed")
+                    }) {
+                        Image(systemName: "play.fill")
+                    }
+                    .foregroundColor(.black)
+                    .padding(.horizontal, Metric.buttonPadding)
+
+                    Button(action: {
+                        print("button pressed")
+                    }) {
+                        Image(systemName: "forward.fill")
+                    }
+                    .foregroundColor(.black)
+                    .padding(.horizontal, Metric.buttonPadding)
                 }
-                .foregroundColor(.black)
-                .padding(.horizontal, 15)
+                .frame(height: Metric.hStackHeight)
+                Divider()
             }
-            Divider()
         }
+    }
+
+    struct Metric {
+        static let imageWidth: CGFloat = 100
+        static let imageHeight: CGFloat = 100
+        static let cornerRadius: CGFloat = 5
+        static let imageShadowRadius: CGFloat = 7
+        static let buttonPadding: CGFloat = 6
+        static let hStackHeight: CGFloat = 70
+        static let iconForPlayerFontSize: CGFloat = 20
     }
 }
 
@@ -51,3 +63,6 @@ struct PlayerView_Previews: PreviewProvider {
         PlayerView()
     }
 }
+
+
+
