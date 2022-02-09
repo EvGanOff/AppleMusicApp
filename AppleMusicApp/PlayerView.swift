@@ -47,6 +47,8 @@ struct PlayerView: View {
         }
     }
 
+    // MARK: - Metric
+
     struct Metric {
         static let imageWidth: CGFloat = 100
         static let imageHeight: CGFloat = 100
