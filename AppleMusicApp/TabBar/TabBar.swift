@@ -31,13 +31,14 @@ struct TabBar: View {
             
             PlayerView()
                 .padding(.bottom, Metric.playerViewPaddingBottom)
+
         }
     }
 
     // MARK: - Metric
 
     struct Metric {
-        static let playerViewPaddingBottom: CGFloat = 50
+        static let playerViewPaddingBottom: CGFloat = 49
     }
 }
 

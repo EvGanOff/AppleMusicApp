@@ -43,7 +43,10 @@ struct PlayerView: View {
                 }
                 .frame(height: Metric.hStackHeight)
                 Divider()
+
             }
+            .background(Color.white)
+            .opacity(0.95)
         }
     }
 

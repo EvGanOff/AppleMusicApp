@@ -14,6 +14,7 @@ struct RadioView: View {
                 VStack {
                     RadioCollectionView()
                     Spacer()
+                    RadioStationView()
                 }
                 .navigationBarTitle(Text("Радио"))
             }
