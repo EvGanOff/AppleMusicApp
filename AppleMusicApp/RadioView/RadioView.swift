@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RadioView.swift
 //  AppleMusicApp
 //
 //  Created by Евгений Ганусенко on 2/3/22.
@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct RadioView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct RadioView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        RadioView()
     }
 }
