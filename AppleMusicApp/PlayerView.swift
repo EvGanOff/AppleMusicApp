@@ -40,13 +40,15 @@ struct PlayerView: View {
                     }
                     .foregroundColor(.black)
                     .padding(.horizontal, Metric.buttonPadding)
+                    
                 }
                 .frame(height: Metric.hStackHeight)
                 Divider()
 
             }
-            .background(Color.white)
-            .opacity(0.95)
+            .background(Color.gray)
+            .opacity(0.9)
+
         }
     }
 

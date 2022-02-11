@@ -28,7 +28,7 @@ struct TabBar: View {
                     }
             }
             .accentColor(Color.red)
-            
+
             PlayerView()
                 .padding(.bottom, Metric.playerViewPaddingBottom)
 
