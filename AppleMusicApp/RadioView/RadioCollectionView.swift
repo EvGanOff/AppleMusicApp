@@ -44,6 +44,7 @@ struct RadioCollectionView: View {
         }
         .padding(Metric.lazyVGridSpacing)
     }
+    
     struct Metric {
         static let lazyHGridSpacing: CGFloat = 8
         static let textFontSizeTitleLabel: CGFloat = 11

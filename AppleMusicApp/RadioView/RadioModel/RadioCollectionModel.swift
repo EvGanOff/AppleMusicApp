@@ -17,12 +17,31 @@ struct RadioCollectionModel: Identifiable {
 
 extension RadioCollectionModel {
     static let data = [
-        RadioCollectionModel(image: "Hits", title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ", subTitle: "Хиты на русском", groupTitle: "Станция Apple Music"),
-        RadioCollectionModel(image: "Chill", title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ", subTitle: "Чилаут", groupTitle: "Станция Apple Music"),
-        RadioCollectionModel(image: "Pop", title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ", subTitle: "Поп-музыка", groupTitle: "Станция Apple Music"),
-        RadioCollectionModel(image: "Dance", title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ", subTitle: "Танцевальная музыка", groupTitle: "Станция Apple Music"),
-        RadioCollectionModel(image: "Hip-hop", title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ", subTitle: "Хип-хоп на русском", groupTitle: "Станция Apple Music"),
-        
+        RadioCollectionModel(
+            image: "Hits",
+            title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ",
+            subTitle: "Хиты на русском",
+            groupTitle: "Станция Apple Music"),
+        RadioCollectionModel(
+            image: "Chill",
+            title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ",
+            subTitle: "Чилаут",
+            groupTitle: "Станция Apple Music"),
+        RadioCollectionModel(
+            image: "Pop",
+            title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ",
+            subTitle: "Поп-музыка",
+            groupTitle: "Станция Apple Music"),
+        RadioCollectionModel(
+            image: "Dance",
+            title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ",
+            subTitle: "Танцевальная музыка",
+            groupTitle: "Станция Apple Music"),
+        RadioCollectionModel(
+            image: "Hip-hop",
+            title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ",
+            subTitle: "Хип-хоп на русском",
+            groupTitle: "Станция Apple Music"),
     ]
 }
 
