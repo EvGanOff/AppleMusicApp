@@ -44,6 +44,8 @@ struct TabBar: View {
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
-        TabBar()
+        ForEach(ColorScheme.allCases, id: \.self) {
+            TabBar().preferredColorScheme($0)
+        }
     }
 }
