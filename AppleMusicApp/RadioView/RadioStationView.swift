@@ -32,16 +32,19 @@ struct RadioStationView: View {
                                 .resizable()
                                 .frame(width: Metric.imageFrameWidthAndHeight, height: Metric.imageFrameWidthAndHeight)
                                 .cornerRadius(Metric.imageCornerRadius)
-                        }
+
                         .padding(.leading, Metric.hStackPadding)
 
-                        Text(data.title)
-                            .foregroundColor(.gray)
-                            .padding(.leading, Metric.textPadding)
-                            .font(.system(size: Metric.textFontSizeTitleLabel))
-                        Text(data.groupTitle)
-                            .padding(.leading, Metric.textPadding)
-                            .font(.system(size: Metric.textFontSizeGroupTitleLabel))
+                            VStack(alignment: .leading) {
+                                Text(data.title)
+                                    .foregroundColor(.gray)
+                                    .padding(.trailing, Metric.textPadding)
+                                    .font(.system(size: Metric.textFontSizeTitleLabel))
+                                Text(data.groupTitle)
+                                    .padding(.trailing, Metric.textPadding)
+                                    .font(.system(size: Metric.textFontSizeGroupTitleLabel))
+                            }
+                        }
                     }
 
                     Divider()
@@ -51,11 +54,12 @@ struct RadioStationView: View {
         }
     }
 
+    // MARK: - Metric
     struct Metric {
         static let spacingLazyVGrid: CGFloat = 15
         static let textFontSizeTitleLabel: CGFloat = 16
         static let textFontSizeGroupTitleLabel: CGFloat = 18
-        static let textPadding: CGFloat = 8
+        static let textPadding: CGFloat = 16
 
         static let hStackPadding: CGFloat = 8
         static let vStackDividerPadding: CGFloat = 2

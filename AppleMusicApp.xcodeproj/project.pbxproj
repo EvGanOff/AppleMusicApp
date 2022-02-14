@@ -12,7 +12,12 @@
 		5E04612427B5C2D600E24ED8 /* SearchCotegoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04612327B5C2D600E24ED8 /* SearchCotegoryModel.swift */; };
 		5E04612927B5E54C00E24ED8 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04612827B5E54C00E24ED8 /* CategoriesView.swift */; };
 		5E04612B27B6798B00E24ED8 /* CategorySubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04612A27B6798B00E24ED8 /* CategorySubView.swift */; };
-		5E04612E27B6803C00E24ED8 /* CategoryCollectionSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04612D27B6803C00E24ED8 /* CategoryCollectionSubView.swift */; };
+		5E04612E27B6803C00E24ED8 /* PlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04612D27B6803C00E24ED8 /* PlaylistView.swift */; };
+		5E04613027B6829800E24ED8 /* PlaylistViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04612F27B6829800E24ED8 /* PlaylistViewData.swift */; };
+		5E04613327B6838900E24ED8 /* PlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04613227B6838900E24ED8 /* PlaylistModel.swift */; };
+		5E04613527B6846B00E24ED8 /* TracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04613427B6846B00E24ED8 /* TracksView.swift */; };
+		5E04613727B684EC00E24ED8 /* TracksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04613627B684EC00E24ED8 /* TracksData.swift */; };
+		5E04613927B684FD00E24ED8 /* TracksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04613827B684FD00E24ED8 /* TracksModel.swift */; };
 		5E7EA56F27B1BB070021302B /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EA56E27B1BB070021302B /* PlayerView.swift */; };
 		5E7EA57127B1BC770021302B /* MediaLibraryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EA57027B1BC770021302B /* MediaLibraryInfo.swift */; };
 		5E7EA57327B1BCF30021302B /* MediaLibraryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EA57227B1BCF30021302B /* MediaLibraryList.swift */; };
@@ -59,7 +64,12 @@
 		5E04612327B5C2D600E24ED8 /* SearchCotegoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCotegoryModel.swift; sourceTree = "<group>"; };
 		5E04612827B5E54C00E24ED8 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		5E04612A27B6798B00E24ED8 /* CategorySubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySubView.swift; sourceTree = "<group>"; };
-		5E04612D27B6803C00E24ED8 /* CategoryCollectionSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionSubView.swift; sourceTree = "<group>"; };
+		5E04612D27B6803C00E24ED8 /* PlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistView.swift; sourceTree = "<group>"; };
+		5E04612F27B6829800E24ED8 /* PlaylistViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewData.swift; sourceTree = "<group>"; };
+		5E04613227B6838900E24ED8 /* PlaylistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModel.swift; sourceTree = "<group>"; };
+		5E04613427B6846B00E24ED8 /* TracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksView.swift; sourceTree = "<group>"; };
+		5E04613627B684EC00E24ED8 /* TracksData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksData.swift; sourceTree = "<group>"; };
+		5E04613827B684FD00E24ED8 /* TracksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksModel.swift; sourceTree = "<group>"; };
 		5E7EA56E27B1BB070021302B /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		5E7EA57027B1BC770021302B /* MediaLibraryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryInfo.swift; sourceTree = "<group>"; };
 		5E7EA57227B1BCF30021302B /* MediaLibraryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryList.swift; sourceTree = "<group>"; };
@@ -125,9 +135,22 @@
 			isa = PBXGroup;
 			children = (
 				5E04612A27B6798B00E24ED8 /* CategorySubView.swift */,
-				5E04612D27B6803C00E24ED8 /* CategoryCollectionSubView.swift */,
+				5E04612D27B6803C00E24ED8 /* PlaylistView.swift */,
+				5E04613427B6846B00E24ED8 /* TracksView.swift */,
+				5E04613127B6829D00E24ED8 /* PlaylistAndTracksModel */,
 			);
 			path = SubCategoriesViews;
+			sourceTree = "<group>";
+		};
+		5E04613127B6829D00E24ED8 /* PlaylistAndTracksModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E04612F27B6829800E24ED8 /* PlaylistViewData.swift */,
+				5E04613227B6838900E24ED8 /* PlaylistModel.swift */,
+				5E04613627B684EC00E24ED8 /* TracksData.swift */,
+				5E04613827B684FD00E24ED8 /* TracksModel.swift */,
+			);
+			path = PlaylistAndTracksModel;
 			sourceTree = "<group>";
 		};
 		5E7EA57C27B3CA2C0021302B /* RadioModel */ = {
@@ -376,7 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E7EA57527B1BD580021302B /* MediaLibraryModel.swift in Sources */,
-				5E04612E27B6803C00E24ED8 /* CategoryCollectionSubView.swift in Sources */,
+				5E04612E27B6803C00E24ED8 /* PlaylistView.swift in Sources */,
 				5ECBC5B327AC6FCB0054C245 /* SearchView.swift in Sources */,
 				5E7EA57927B3CA070021302B /* RadioStationView.swift in Sources */,
 				5ECBC58627AC6BB60054C245 /* TabBar.swift in Sources */,
@@ -384,11 +407,16 @@
 				5E7EA57327B1BCF30021302B /* MediaLibraryList.swift in Sources */,
 				5E7EA57B27B3CA280021302B /* RadioCollectionModel.swift in Sources */,
 				5ECBC58427AC6BB60054C245 /* AppleMusicAppApp.swift in Sources */,
+				5E04613327B6838900E24ED8 /* PlaylistModel.swift in Sources */,
 				5E04612927B5E54C00E24ED8 /* CategoriesView.swift in Sources */,
+				5E04613027B6829800E24ED8 /* PlaylistViewData.swift in Sources */,
 				5E7EA58227B415ED0021302B /* RadioStationModel.swift in Sources */,
 				5E7EA57127B1BC770021302B /* MediaLibraryInfo.swift in Sources */,
 				5E04612427B5C2D600E24ED8 /* SearchCotegoryModel.swift in Sources */,
+				5E04613727B684EC00E24ED8 /* TracksData.swift in Sources */,
+				5E04613927B684FD00E24ED8 /* TracksModel.swift in Sources */,
 				5E04612B27B6798B00E24ED8 /* CategorySubView.swift in Sources */,
+				5E04613527B6846B00E24ED8 /* TracksView.swift in Sources */,
 				5E7EA56F27B1BB070021302B /* PlayerView.swift in Sources */,
 				5E04612227B5C26900E24ED8 /* SearchCategoryData.swift in Sources */,
 				5E7EA57E27B3D0050021302B /* RadioCollectionData.swift in Sources */,
@@ -566,7 +594,6 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -597,7 +624,6 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

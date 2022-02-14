@@ -21,6 +21,7 @@ struct RadioCollectionView: View {
                 ForEach(dataModel.data, id: \.id) { data in
                     VStack(alignment: .leading) {
                         Divider()
+                            .padding(.bottom, Metric.imageDividerPadding)
 
                         Text(data.title)
                             .foregroundColor(.gray)
@@ -37,14 +38,14 @@ struct RadioCollectionView: View {
                             .cornerRadius(Metric.imageCornerRadius)
 
                         Divider()
-                            .padding(Metric.imageDividerPadding)
                     }
                 }
             }
         }
         .padding(Metric.lazyVGridSpacing)
     }
-    
+
+    // MARK: - Metric
     struct Metric {
         static let lazyHGridSpacing: CGFloat = 8
         static let textFontSizeTitleLabel: CGFloat = 11
