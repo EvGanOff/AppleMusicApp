@@ -16,12 +16,11 @@ struct RadioCollectionView: View {
     ]
 
     var body: some View {
+        Divider()
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: row, spacing: Metric.lazyHGridSpacing) {
                 ForEach(dataModel.data, id: \.id) { data in
                     VStack(alignment: .leading) {
-                        Divider()
-                            .padding(.bottom, Metric.imageDividerPadding)
 
                         Text(data.title)
                             .foregroundColor(.gray)
@@ -36,13 +35,12 @@ struct RadioCollectionView: View {
                             .resizable()
                             .frame(width: Metric.imageFrameWidth, height: Metric.imageFrameHeight)
                             .cornerRadius(Metric.imageCornerRadius)
-
-                        Divider()
                     }
                 }
             }
         }
         .padding(Metric.lazyVGridSpacing)
+        Divider()
     }
 
     // MARK: - Metric

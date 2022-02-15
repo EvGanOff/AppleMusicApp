@@ -42,13 +42,11 @@ struct PlayerView: View {
                     .padding(.horizontal, Metric.buttonPadding)
                     
                 }
+                .background(BlurEffect(style: .systemChromeMaterial))
                 .frame(height: Metric.hStackHeight)
                 Divider()
 
             }
-            .background(Color.gray)
-            .opacity(0.9)
-
         }
     }
 
@@ -60,8 +58,20 @@ struct PlayerView: View {
         static let cornerRadius: CGFloat = 5
         static let imageShadowRadius: CGFloat = 7
         static let buttonPadding: CGFloat = 6
-        static let hStackHeight: CGFloat = 70
+        static let hStackHeight: CGFloat = 80
         static let iconForPlayerFontSize: CGFloat = 20
+    }
+}
+
+struct BlurEffect: UIViewRepresentable {
+    var style: UIBlurEffect.Style = .systemMaterial
+
+    func makeUIView(context: Context) -> UIVisualEffectView {
+        return UIVisualEffectView(effect: UIBlurEffect(style: style))
+    }
+
+    func updateUIView(_ uiView: UIVisualEffectView, context: Context) {
+        uiView.effect = UIBlurEffect(style: style)
     }
 }
 

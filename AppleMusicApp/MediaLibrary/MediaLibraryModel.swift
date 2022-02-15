@@ -26,6 +26,4 @@ extension LibraryModel {
         LibraryModel(image: "square.and.arrow.down", title: "Загруженно"),
         LibraryModel(image: "house", title: "Коллекции")
     ]
-
-
 }
