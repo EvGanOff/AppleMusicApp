@@ -10,7 +10,6 @@ import SwiftUI
 struct SearchCategoryView: View {
 
     @ObservedObject var dataModel = SearchCategoryData()
-    
 
     let columns: [GridItem] = Array(repeating: .init(), count: 2)
 
@@ -18,7 +17,6 @@ struct SearchCategoryView: View {
         VStack(alignment: .leading) {
             Text("Поиск по категориям")
                 .font(.title3).bold()
-            
             LazyVGrid(columns: columns, alignment: .center) {
                 ForEach(dataModel.data, id: \.id) { data in
                     NavigationLink(destination: CategorySubView(), label: {
@@ -27,6 +25,7 @@ struct SearchCategoryView: View {
                 }
             }
         }
+        .padding(8)
     }
 }
 

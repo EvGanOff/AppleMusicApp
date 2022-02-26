@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct TabBar: View {
+
+    @State var isShowed = false
+    @Namespace var animation
+
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView {
@@ -29,9 +33,8 @@ struct TabBar: View {
             }
             .accentColor(Color.red)
 
-            PlayerView()
+            PlayerView(isShowed: $isShowed)
                 .padding(.bottom, Metric.playerViewPaddingBottom)
-
         }
     }
 

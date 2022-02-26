@@ -9,15 +9,14 @@ import SwiftUI
 
 struct CategorySubView: View {
     var body: some View {
-        NavigationView {
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack {
-                    PlaylistView()
-                    Spacer()
-                }
-                .navigationBarTitle(Text("Радио"))
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack(alignment: .leading) {
+                PlaylistView()
+                Spacer()
+                TracksView()
             }
         }
+        .navigationTitle(Text("Пространственное аудио"))
     }
 }
 

@@ -39,6 +39,7 @@ struct RadioCollectionView: View {
                 }
             }
         }
+
         .padding(Metric.lazyVGridSpacing)
         Divider()
     }
@@ -51,8 +52,8 @@ struct RadioCollectionView: View {
         static let textFontSizeGroupTitleLabel: CGFloat = 22
         static let lazyVGridSpacing: CGFloat = 10
 
-        static let imageFrameWidth: CGFloat = 300
-        static let imageFrameHeight: CGFloat = 200
+        static let imageFrameWidth: CGFloat = 350
+        static let imageFrameHeight: CGFloat = 250
         static let imageCornerRadius: CGFloat = 8
 
         static let imageDividerPadding: CGFloat = 8

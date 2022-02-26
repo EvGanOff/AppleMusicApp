@@ -69,7 +69,7 @@ struct RadioStationView: View {
     }
 }
 
-struct RadioStationView_Previews: PreviewProvider {
+struct RadioStationView_Previews: PreviewProvider {    
     static var previews: some View {
         RadioStationView()
     }
