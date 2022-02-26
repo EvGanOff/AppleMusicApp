@@ -14,7 +14,7 @@ struct CategoriesView: View {
         ZStack(alignment: .leading) {
             Image(self.image)
                 .resizable()
-                .frame(minWidth: 180, minHeight: 150)
+                .frame(minWidth: 170, minHeight: 150)
                 .scaledToFit()
                 .cornerRadius(12)
         }

@@ -18,6 +18,8 @@
 		5E04613527B6846B00E24ED8 /* TracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04613427B6846B00E24ED8 /* TracksView.swift */; };
 		5E04613727B684EC00E24ED8 /* TracksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04613627B684EC00E24ED8 /* TracksData.swift */; };
 		5E04613927B684FD00E24ED8 /* TracksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04613827B684FD00E24ED8 /* TracksModel.swift */; };
+		5E09A10E27C3ED620011ACBE /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E09A10D27C3ED620011ACBE /* SearchResultView.swift */; };
+		5E09A11027C3EDD60011ACBE /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E09A10F27C3EDD60011ACBE /* SearchResult.swift */; };
 		5E7EA56F27B1BB070021302B /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EA56E27B1BB070021302B /* PlayerView.swift */; };
 		5E7EA57127B1BC770021302B /* MediaLibraryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EA57027B1BC770021302B /* MediaLibraryInfo.swift */; };
 		5E7EA57327B1BCF30021302B /* MediaLibraryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EA57227B1BCF30021302B /* MediaLibraryList.swift */; };
@@ -28,7 +30,6 @@
 		5E7EA57E27B3D0050021302B /* RadioCollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EA57D27B3D0050021302B /* RadioCollectionData.swift */; };
 		5E7EA58027B4158F0021302B /* RadioStationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EA57F27B4158F0021302B /* RadioStationData.swift */; };
 		5E7EA58227B415ED0021302B /* RadioStationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EA58127B415ED0021302B /* RadioStationModel.swift */; };
-		5E7EA59F27B5BE2D0021302B /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EA59E27B5BE2D0021302B /* SearchBarView.swift */; };
 		5ECBC58427AC6BB60054C245 /* AppleMusicAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC58327AC6BB60054C245 /* AppleMusicAppApp.swift */; };
 		5ECBC58627AC6BB60054C245 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC58527AC6BB60054C245 /* TabBar.swift */; };
 		5ECBC58827AC6BB80054C245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECBC58727AC6BB80054C245 /* Assets.xcassets */; };
@@ -70,6 +71,8 @@
 		5E04613427B6846B00E24ED8 /* TracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksView.swift; sourceTree = "<group>"; };
 		5E04613627B684EC00E24ED8 /* TracksData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksData.swift; sourceTree = "<group>"; };
 		5E04613827B684FD00E24ED8 /* TracksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksModel.swift; sourceTree = "<group>"; };
+		5E09A10D27C3ED620011ACBE /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
+		5E09A10F27C3EDD60011ACBE /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		5E7EA56E27B1BB070021302B /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		5E7EA57027B1BC770021302B /* MediaLibraryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryInfo.swift; sourceTree = "<group>"; };
 		5E7EA57227B1BCF30021302B /* MediaLibraryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryList.swift; sourceTree = "<group>"; };
@@ -81,7 +84,6 @@
 		5E7EA57F27B4158F0021302B /* RadioStationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationData.swift; sourceTree = "<group>"; };
 		5E7EA58127B415ED0021302B /* RadioStationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationModel.swift; sourceTree = "<group>"; };
 		5E7EA59D27B5BADE0021302B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		5E7EA59E27B5BE2D0021302B /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		5ECBC58027AC6BB60054C245 /* AppleMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECBC58327AC6BB60054C245 /* AppleMusicAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicAppApp.swift; sourceTree = "<group>"; };
 		5ECBC58527AC6BB60054C245 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				5E04612A27B6798B00E24ED8 /* CategorySubView.swift */,
 				5E04612D27B6803C00E24ED8 /* PlaylistView.swift */,
 				5E04613427B6846B00E24ED8 /* TracksView.swift */,
+				5E04612527B5C36800E24ED8 /* SearchCategoryModel */,
 				5E04613127B6829D00E24ED8 /* PlaylistAndTracksModel */,
 			);
 			path = SubCategoriesViews;
@@ -151,6 +154,15 @@
 				5E04613827B684FD00E24ED8 /* TracksModel.swift */,
 			);
 			path = PlaylistAndTracksModel;
+			sourceTree = "<group>";
+		};
+		5E52037027CA885A00DBA51D /* AppleMusicAndMyMedia */ = {
+			isa = PBXGroup;
+			children = (
+				5E09A10D27C3ED620011ACBE /* SearchResultView.swift */,
+				5E09A10F27C3EDD60011ACBE /* SearchResult.swift */,
+			);
+			path = AppleMusicAndMyMedia;
 			sourceTree = "<group>";
 		};
 		5E7EA57C27B3CA2C0021302B /* RadioModel */ = {
@@ -191,9 +203,9 @@
 				5ECBC58327AC6BB60054C245 /* AppleMusicAppApp.swift */,
 				5ECBC58727AC6BB80054C245 /* Assets.xcassets */,
 				5E7EA56E27B1BB070021302B /* PlayerView.swift */,
+				5ECBC5B427AC6FDE0054C245 /* RadioView */,
 				5ECBC5AE27AC6E5E0054C245 /* TabBar */,
 				5ECBC5AD27AC6E570054C245 /* MediaLibrary */,
-				5ECBC5B427AC6FDE0054C245 /* RadioView */,
 				5ECBC5B127AC6FA80054C245 /* SearchView */,
 				5ECBC58927AC6BB80054C245 /* Preview Content */,
 			);
@@ -250,9 +262,8 @@
 				5ECBC5B227AC6FCB0054C245 /* SearchView.swift */,
 				5E04611F27B5C1E400E24ED8 /* SearchCategoryView.swift */,
 				5E04612827B5E54C00E24ED8 /* CategoriesView.swift */,
-				5E7EA59E27B5BE2D0021302B /* SearchBarView.swift */,
+				5E52037027CA885A00DBA51D /* AppleMusicAndMyMedia */,
 				5E04612C27B679BD00E24ED8 /* SubCategoriesViews */,
-				5E04612527B5C36800E24ED8 /* SearchCategoryModel */,
 			);
 			path = SearchView;
 			sourceTree = "<group>";
@@ -403,7 +414,6 @@
 				5ECBC5B327AC6FCB0054C245 /* SearchView.swift in Sources */,
 				5E7EA57927B3CA070021302B /* RadioStationView.swift in Sources */,
 				5ECBC58627AC6BB60054C245 /* TabBar.swift in Sources */,
-				5E7EA59F27B5BE2D0021302B /* SearchBarView.swift in Sources */,
 				5E7EA57327B1BCF30021302B /* MediaLibraryList.swift in Sources */,
 				5E7EA57B27B3CA280021302B /* RadioCollectionModel.swift in Sources */,
 				5ECBC58427AC6BB60054C245 /* AppleMusicAppApp.swift in Sources */,
@@ -414,11 +424,13 @@
 				5E7EA57127B1BC770021302B /* MediaLibraryInfo.swift in Sources */,
 				5E04612427B5C2D600E24ED8 /* SearchCotegoryModel.swift in Sources */,
 				5E04613727B684EC00E24ED8 /* TracksData.swift in Sources */,
+				5E09A11027C3EDD60011ACBE /* SearchResult.swift in Sources */,
 				5E04613927B684FD00E24ED8 /* TracksModel.swift in Sources */,
 				5E04612B27B6798B00E24ED8 /* CategorySubView.swift in Sources */,
 				5E04613527B6846B00E24ED8 /* TracksView.swift in Sources */,
 				5E7EA56F27B1BB070021302B /* PlayerView.swift in Sources */,
 				5E04612227B5C26900E24ED8 /* SearchCategoryData.swift in Sources */,
+				5E09A10E27C3ED620011ACBE /* SearchResultView.swift in Sources */,
 				5E7EA57E27B3D0050021302B /* RadioCollectionData.swift in Sources */,
 				5ECBC5B027AC6ED20054C245 /* MediaLibraryView.swift in Sources */,
 				5E7EA57727B3C9B10021302B /* RadioCollectionView.swift in Sources */,
