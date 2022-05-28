@@ -28,7 +28,7 @@ struct RadioStationView: View {
                 ForEach(dataModel.data, id: \.id) { data in
                     VStack(alignment: .leading) {
                         HStack {
-                            Image(data.image)
+                            Image(data.imageName)
                                 .resizable()
                                 .frame(width: Metric.imageFrameWidthAndHeight, height: Metric.imageFrameWidthAndHeight)
                                 .cornerRadius(Metric.imageCornerRadius)
