@@ -45,7 +45,8 @@ struct PlaylistView: View {
         }
     }
 
-    // MARK: - Metric
+    // MARK: - Metric -
+    
     struct Metric {
         static let lazyHGridSpacing: CGFloat = 8
         static let textFontSizeTitleLabel: CGFloat = 10

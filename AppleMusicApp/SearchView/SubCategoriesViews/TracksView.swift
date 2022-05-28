@@ -23,6 +23,7 @@ struct TracksView: View {
                             design: .default))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, Metric.lazyVStackSpacing)
+
             ScrollView (.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: row, spacing: Metric.lazyHGridSpacing) {
                     ForEach(dataModel.data, id: \.id) { data in
@@ -35,7 +36,8 @@ struct TracksView: View {
                             Text(data.title)
                                 .font(.system(size: Metric.textFontSizeSubTitleLabel))
                                 .lineLimit(Metric.lineLimit)
-                                .frame(width: 150, height: 25)
+                                .frame(width: Metric.textFrameWidth,
+                                       height: Metric.textFrameHeight)
                                 .padding(.leading, Metric.textPadding)
                             Text(data.subTitle)
                                 .foregroundColor(.gray)
@@ -45,6 +47,7 @@ struct TracksView: View {
                         }
                     }
                 }
+
                 .padding(.leading, Metric.lazyHGridSpacing)
             }
         }
@@ -55,6 +58,8 @@ struct TracksView: View {
         static let textFontSizeTitleLabel: CGFloat = 10
         static let textFontSizeSubTitleLabel: CGFloat = 19
         static let textFontSizeGroupTitleLabel: CGFloat = 18
+        static let textFrameWidth: CGFloat = 150
+        static let textFrameHeight: CGFloat = 25
         static let lazyVStackSpacing: CGFloat = 10
 
         static let imageFrameWidth: CGFloat = 150

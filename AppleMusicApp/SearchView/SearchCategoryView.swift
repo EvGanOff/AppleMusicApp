@@ -25,6 +25,7 @@ struct SearchCategoryView: View {
                 }
             }
         }
+        
         .padding(8)
     }
 }

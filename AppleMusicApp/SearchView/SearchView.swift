@@ -10,36 +10,63 @@ import SwiftUI
 struct SearchView: View {
 
     @State private var dataModel = RadioStationModel.data
-    @State private var search = ""
+    @State private var searching = ""
+    @State private var searchPlaceholder: String = "Ваша медиатека"
+    @State private var selectedSearch = 1
 
     var columns = [
         GridItem(.flexible())
-        ]
-    
+    ]
+
     var body: some View {
         NavigationView {
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack {
-                    if search.isEmpty {
+            ScrollView {
+                VStack(alignment: .leading) {
+                    Divider()
+
+                    LazyVGrid(columns: columns, alignment: .leading) {
                         SearchCategoryView()
-                    } else {
-                        SearchResultView(searchText: $search)
+                    }
+                }
+
+                Spacer(minLength: 70)
+            }
+
+            .padding(.horizontal, 10)
+        }
+
+        .searchable(text: $searching, placement: .navigationBarDrawer(displayMode: .always), prompt: self.$searchPlaceholder.wrappedValue) {
+                    VStack(alignment: .leading) {
+                        Picker("SearchSource", selection: $selectedSearch) {
+                            Text("Apple Music").tag(0)
+                            Text("Ваша медиатека").tag(1)
+                        }
+                        .onChange(of: selectedSearch) { tag in
+                            if tag == 0 {
+                                searchPlaceholder = "Артисты, песни, тексты и др."
+                            } else {
+                                searchPlaceholder = "Ваша медиатека"
+                            }
+                        }
+                        .pickerStyle(.segmented)
+                    }
+
+            ScrollView {
+                LazyVGrid(columns: columns, alignment: .leading) {
+                    ForEach(dataModel, id: \.self) { data in
+                        SearchViewListCell(model: data)
+                            .searchCompletion(data.title)
+                            .tint(.primary)
                     }
                 }
             }
-            .navigationBarTitle(Text("Поиск"))
-            .navigationBarTitleDisplayMode(.large)
         }
-        .searchable(text: $search,
-                    placement: .navigationBarDrawer(displayMode: .always),
-                    prompt: "Ваша медиатека")
     }
 }
 
 extension SearchView {
 
     enum Metric {
-
         static let searchFrameWidth: CGFloat = 370
         static let searchFrameHeight: CGFloat = 20
 
@@ -57,7 +84,7 @@ extension SearchView {
 }
 
 struct SearchView_Previews: PreviewProvider {
-
+    @State static var searchTextPreviews = ""
     static var previews: some View {
         SearchView()
     }
