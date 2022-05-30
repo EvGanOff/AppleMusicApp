@@ -35,7 +35,7 @@ struct MediaLibraryList: View {
         }
     }
 
-    // MARK: - Metric
+    // MARK: - Metric -
 
     struct Metric {
         static let width: CGFloat = 25

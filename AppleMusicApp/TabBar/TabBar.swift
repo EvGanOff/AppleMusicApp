@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct TabBar: View {
+
+    @State var isShowed = false
+    @Namespace var animation
+    @State var dataModel = SearchCategoryData()
+
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView {
@@ -26,10 +31,15 @@ struct TabBar: View {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")
                     }
+                SearchViewUIKit()
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                        Text("Поиск UIKit")
+                    }
             }
             .accentColor(Color.red)
-            
-            PlayerView()
+
+            PlayerView(isShowed: $isShowed)
                 .padding(.bottom, Metric.playerViewPaddingBottom)
         }
     }
@@ -37,12 +47,14 @@ struct TabBar: View {
     // MARK: - Metric
 
     struct Metric {
-        static let playerViewPaddingBottom: CGFloat = 50
+        static let playerViewPaddingBottom: CGFloat = 49
     }
 }
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
-        TabBar()
+        ForEach(ColorScheme.allCases, id: \.self) {
+            TabBar().preferredColorScheme($0)
+        }
     }
 }
