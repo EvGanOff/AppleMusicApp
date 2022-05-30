@@ -11,6 +11,7 @@ struct TabBar: View {
 
     @State var isShowed = false
     @Namespace var animation
+    @State var dataModel = SearchCategoryData()
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -29,6 +30,11 @@ struct TabBar: View {
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")
+                    }
+                SearchViewUIKit()
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                        Text("Поиск UIKit")
                     }
             }
             .accentColor(Color.red)
