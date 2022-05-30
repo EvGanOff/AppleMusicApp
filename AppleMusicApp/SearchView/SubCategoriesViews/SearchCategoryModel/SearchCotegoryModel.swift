@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SearchCategoryModel: Identifiable {
+struct SearchCategoryModel: Identifiable, Hashable {
     let id = UUID()
     let image: String
 

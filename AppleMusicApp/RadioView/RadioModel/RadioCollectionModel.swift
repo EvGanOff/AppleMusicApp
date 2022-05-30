@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct RadioCollectionModel: Identifiable {
+struct RadioCollectionModel: Identifiable, Hashable {
     let id = UUID()
-    let image: String
+    let imageName: String
+    var image: Image { Image(imageName) }
     let title: String
     let subTitle: String
     let groupTitle: String
@@ -18,27 +20,27 @@ struct RadioCollectionModel: Identifiable {
 extension RadioCollectionModel {
     static let data = [
         RadioCollectionModel(
-            image: "Hits",
+            imageName: "Hits",
             title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ",
             subTitle: "Хиты на русском",
             groupTitle: "Станция Apple Music"),
         RadioCollectionModel(
-            image: "Chill",
+                        imageName: "Chill",
             title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ",
             subTitle: "Чилаут",
             groupTitle: "Станция Apple Music"),
         RadioCollectionModel(
-            image: "Pop",
+                        imageName: "Pop",
             title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ",
             subTitle: "Поп-музыка",
             groupTitle: "Станция Apple Music"),
         RadioCollectionModel(
-            image: "Dance",
+                        imageName: "Dance",
             title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ",
             subTitle: "Танцевальная музыка",
             groupTitle: "Станция Apple Music"),
         RadioCollectionModel(
-            image: "Hip-hop",
+                        imageName: "Hip-hop",
             title: "ИЗБРАННАЯ РАДИОСТАНЦИЯ",
             subTitle: "Хип-хоп на русском",
             groupTitle: "Станция Apple Music"),

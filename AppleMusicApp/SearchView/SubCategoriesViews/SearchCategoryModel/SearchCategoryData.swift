@@ -7,6 +7,6 @@
 
 import Foundation
 
-class SearchCategoryData: ObservableObject {
+class SearchCategoryData: ObservableObject, Identifiable {
     @Published var data = SearchCategoryModel.data
 }

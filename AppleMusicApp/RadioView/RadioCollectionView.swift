@@ -31,7 +31,7 @@ struct RadioCollectionView: View {
                         Text(data.groupTitle)
                             .font(.system(size: Metric.textFontSizeGroupTitleLabel))
                             .foregroundColor(.gray)
-                        Image(data.image)
+                        Image(data.imageName)
                             .resizable()
                             .frame(width: Metric.imageFrameWidth, height: Metric.imageFrameHeight)
                             .cornerRadius(Metric.imageCornerRadius)

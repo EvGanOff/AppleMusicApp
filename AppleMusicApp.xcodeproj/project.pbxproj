@@ -40,6 +40,13 @@
 		5ECBC5B627AC6FFA0054C245 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC5B527AC6FF90054C245 /* RadioView.swift */; };
 		5EF13C0E2842B91C00A1D3DD /* SearchViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF13C0D2842B91C00A1D3DD /* SearchViewList.swift */; };
 		5EF13C102842BA1C00A1D3DD /* SearchViewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF13C0F2842BA1C00A1D3DD /* SearchViewListCell.swift */; };
+		5EF13C14284407F700A1D3DD /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF13C13284407F700A1D3DD /* SearchVC.swift */; };
+		5EF13C162844121000A1D3DD /* CollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF13C152844121000A1D3DD /* CollectionLayout.swift */; };
+		5EF13C182844152600A1D3DD /* RadioStationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF13C172844152600A1D3DD /* RadioStationCell.swift */; };
+		5EF13C1A2844195700A1D3DD /* RadioIamge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF13C192844195700A1D3DD /* RadioIamge.swift */; };
+		5EF13C1F28441D9B00A1D3DD /* SearchUIKitViewToSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF13C1E28441D9B00A1D3DD /* SearchUIKitViewToSwiftUI.swift */; };
+		5EF13C2128441E3000A1D3DD /* SearchViewUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF13C2028441E3000A1D3DD /* SearchViewUIKit.swift */; };
+		5EF13C2328444E6800A1D3DD /* HostingCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF13C2228444E6800A1D3DD /* HostingCategoriesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +104,13 @@
 		5ECBC5B527AC6FF90054C245 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
 		5EF13C0D2842B91C00A1D3DD /* SearchViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewList.swift; sourceTree = "<group>"; };
 		5EF13C0F2842BA1C00A1D3DD /* SearchViewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewListCell.swift; sourceTree = "<group>"; };
+		5EF13C13284407F700A1D3DD /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		5EF13C152844121000A1D3DD /* CollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLayout.swift; sourceTree = "<group>"; };
+		5EF13C172844152600A1D3DD /* RadioStationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationCell.swift; sourceTree = "<group>"; };
+		5EF13C192844195700A1D3DD /* RadioIamge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioIamge.swift; sourceTree = "<group>"; };
+		5EF13C1E28441D9B00A1D3DD /* SearchUIKitViewToSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUIKitViewToSwiftUI.swift; sourceTree = "<group>"; };
+		5EF13C2028441E3000A1D3DD /* SearchViewUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewUIKit.swift; sourceTree = "<group>"; };
+		5EF13C2228444E6800A1D3DD /* HostingCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingCategoriesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,10 +264,11 @@
 		5ECBC5B127AC6FA80054C245 /* SearchView */ = {
 			isa = PBXGroup;
 			children = (
+				5EF13C122843F99A00A1D3DD /* SearchViewUIKit */,
 				5ECBC5B227AC6FCB0054C245 /* SearchView.swift */,
+				5E04611F27B5C1E400E24ED8 /* SearchCategoryView.swift */,
 				5EF13C0D2842B91C00A1D3DD /* SearchViewList.swift */,
 				5EF13C0F2842BA1C00A1D3DD /* SearchViewListCell.swift */,
-				5E04611F27B5C1E400E24ED8 /* SearchCategoryView.swift */,
 				5E04612827B5E54C00E24ED8 /* CategoriesView.swift */,
 				5E04612C27B679BD00E24ED8 /* SubCategoriesViews */,
 			);
@@ -269,6 +284,44 @@
 				5E7EA57C27B3CA2C0021302B /* RadioModel */,
 			);
 			path = RadioView;
+			sourceTree = "<group>";
+		};
+		5EF13C122843F99A00A1D3DD /* SearchViewUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5EF13C13284407F700A1D3DD /* SearchVC.swift */,
+				5EF13C1E28441D9B00A1D3DD /* SearchUIKitViewToSwiftUI.swift */,
+				5EF13C2028441E3000A1D3DD /* SearchViewUIKit.swift */,
+				5EF13C2228444E6800A1D3DD /* HostingCategoriesViewController.swift */,
+				5EF13C1D28441D5C00A1D3DD /* Cell */,
+				5EF13C1B28441D2800A1D3DD /* CastomUIElements */,
+				5EF13C1C28441D4100A1D3DD /* CollectionViewLayout */,
+			);
+			path = SearchViewUIKit;
+			sourceTree = "<group>";
+		};
+		5EF13C1B28441D2800A1D3DD /* CastomUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				5EF13C192844195700A1D3DD /* RadioIamge.swift */,
+			);
+			path = CastomUIElements;
+			sourceTree = "<group>";
+		};
+		5EF13C1C28441D4100A1D3DD /* CollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				5EF13C152844121000A1D3DD /* CollectionLayout.swift */,
+			);
+			path = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		5EF13C1D28441D5C00A1D3DD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5EF13C172844152600A1D3DD /* RadioStationCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,10 +459,13 @@
 				5E04612E27B6803C00E24ED8 /* PlaylistView.swift in Sources */,
 				5ECBC5B327AC6FCB0054C245 /* SearchView.swift in Sources */,
 				5E7EA57927B3CA070021302B /* RadioStationView.swift in Sources */,
+				5EF13C14284407F700A1D3DD /* SearchVC.swift in Sources */,
 				5ECBC58627AC6BB60054C245 /* TabBar.swift in Sources */,
+				5EF13C162844121000A1D3DD /* CollectionLayout.swift in Sources */,
 				5E7EA57327B1BCF30021302B /* MediaLibraryList.swift in Sources */,
 				5E7EA57B27B3CA280021302B /* RadioCollectionModel.swift in Sources */,
 				5ECBC58427AC6BB60054C245 /* AppleMusicAppApp.swift in Sources */,
+				5EF13C2128441E3000A1D3DD /* SearchViewUIKit.swift in Sources */,
 				5E04613327B6838900E24ED8 /* PlaylistModel.swift in Sources */,
 				5E04612927B5E54C00E24ED8 /* CategoriesView.swift in Sources */,
 				5E04613027B6829800E24ED8 /* PlaylistViewData.swift in Sources */,
@@ -420,14 +476,18 @@
 				5E04613927B684FD00E24ED8 /* TracksModel.swift in Sources */,
 				5E04612B27B6798B00E24ED8 /* CategorySubView.swift in Sources */,
 				5E04613527B6846B00E24ED8 /* TracksView.swift in Sources */,
+				5EF13C2328444E6800A1D3DD /* HostingCategoriesViewController.swift in Sources */,
 				5E7EA56F27B1BB070021302B /* PlayerView.swift in Sources */,
 				5E04612227B5C26900E24ED8 /* SearchCategoryData.swift in Sources */,
 				5E7EA57E27B3D0050021302B /* RadioCollectionData.swift in Sources */,
 				5ECBC5B027AC6ED20054C245 /* MediaLibraryView.swift in Sources */,
+				5EF13C182844152600A1D3DD /* RadioStationCell.swift in Sources */,
 				5E7EA57727B3C9B10021302B /* RadioCollectionView.swift in Sources */,
 				5EF13C0E2842B91C00A1D3DD /* SearchViewList.swift in Sources */,
 				5E04612027B5C1E400E24ED8 /* SearchCategoryView.swift in Sources */,
+				5EF13C1A2844195700A1D3DD /* RadioIamge.swift in Sources */,
 				5E7EA58027B4158F0021302B /* RadioStationData.swift in Sources */,
+				5EF13C1F28441D9B00A1D3DD /* SearchUIKitViewToSwiftUI.swift in Sources */,
 				5ECBC5B627AC6FFA0054C245 /* RadioView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

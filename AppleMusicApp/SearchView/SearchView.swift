@@ -32,7 +32,7 @@ struct SearchView: View {
                 Spacer(minLength: 70)
             }
 
-            .padding(.horizontal, 10)
+            .padding(.horizontal, 0)
         }
 
         .searchable(text: $searching, placement: .navigationBarDrawer(displayMode: .always), prompt: self.$searchPlaceholder.wrappedValue) {
